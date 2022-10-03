@@ -4,7 +4,7 @@ const Header = () => {
   return ( 
     <header className="header">
       <div className="header-tittle">
-        Hello! It's my first Todo App!
+        Todo App!
       </div>
     </header>
    );

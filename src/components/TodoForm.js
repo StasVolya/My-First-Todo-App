@@ -7,7 +7,6 @@ const TodoForm = () => {
 
   const addTask = (e) => {
     setTodo(e.target.value)
-    console.log(todo);
   }
 
   return ( 
