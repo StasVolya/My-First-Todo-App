@@ -1,24 +1,34 @@
 import React, { useState } from "react";
 
 
-const TodoForm = () => {
+const TodoForm = ({todos, setTodos}) => {
 
-  const [todo, setTodo] = useState('')
+  const [value, setValue] = useState('')
 
-  const addTask = (e) => {
-    setTodo(e.target.value)
-    console.log(todo);
+  const saveTodo = () => {
+    { if (value.length < 1) {
+      alert('Add not empty task, please!')
+    } else {
+      setTodos([...todos, {       
+        id: Math.random(),
+        title: value
+        }
+    ])
+    setValue('')}
   }
-
+  }
   return ( 
     <div className="wrapper-input">
         <input 
         placeholder="Create a new todo..." 
         className="input-todo"
-        value={todo}
-        onChange={addTask}
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
          />
-        <button onClick={''} className="btn-input" type='submit'>Add!</button>
+        <button
+         className="btn-input"
+         onClick={saveTodo}
+         >Add!</button>
     </div>
    );
 }
