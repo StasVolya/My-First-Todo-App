@@ -31,3 +31,67 @@ html {
   color: #FFFFFF;
   text-align: center;
 }
+
+.input-todo {
+  height: 4em;
+  width: 200px;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: peachpuff;
+  padding: 10px;
+  border-radius: 1px;
+  border: 1px solid gray;
+
+}
+
+.btn-input {
+  border-radius: 1px;
+  height: 4em;
+  font-weight: bold;
+  font-size: 16px;
+  width: 70px;
+  padding: 10px;
+  border: none;
+  background-color: green;
+  border: 1px solid gray;
+}
+
+.btn-input:hover {
+  cursor: pointer;
+}
+
+.edit-input {
+  height: 2em;
+  font-weight: bold;
+  font-size: 16px;
+  outline: none;
+}
+
+.edit-btn {
+  height: 2em;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.edit-btn:hover {
+  cursor: pointer;
+}
+
+.list-todo {
+  color: rgb(255, 85, 0);
+  font-size: 36px;
+  padding: 15px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.list-todo-btn {
+  height: 2em;
+  width: 70px;
+  font-size: 16px;
+  margin: 5px;
+  font-weight: bold;
+  background-color: yellow;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
